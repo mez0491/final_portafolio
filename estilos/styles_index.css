@@ -105,8 +105,6 @@ nav{
 }
 
 nav ul { 
-    color: var(--c4);
-    text-decoration: none;
     list-style: none;
     /*Centrar elementos*/
     display: flex;
