@@ -104,7 +104,6 @@ p{
     
 }
 
-
 /*Menu de navegacion inferior*/
 nav{
     width: 100%;
@@ -197,69 +196,6 @@ nav ul li:hover{
     width: 100%;
     height: 100%;
     z-index: -100;
-    
-}
-
-@keyframes star_fall {
-    from {opacity: var(--opac);left: var(--x_start); top: -50%;}
-    to {opacity: var(--opac); left: var(--x_end); top: 150%;}
-
-}
-@keyframes star_rotate {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(359deg);}
-    
-}
-
-.star_bg{
-    /*debug*/
-    --id : 0;
-
-    /*Variables para animar*/
-    --x_start : 0%; --x_end : 0%;
-    --dur : 10s; --delay: 0.2s;
-    --opac : 1;
-
-    opacity: 0;
-    position: fixed;
-    display: block;
-    width: 25px;
-    height: 25px;
-    background-image: url("../imagenes/bg_star.png");
-    image-rendering: pixelated;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    z-index: 1;
-
-    animation-name: star_fall, star_rotate;
-    animation-duration: var(--dur) , 5s;
-    animation-delay: var(--delay), 0s;
-    animation-iteration-count: infinite, infinite;
-    animation-timing-function: linear,linear;
-}
-.star_afterimage{
-    /*Variables para animar*/
-    --x_start : 0%; --x_end : 0%;
-    --dur : 10s; --delay: 0.2s;
-    --opac : 1;
-
-    opacity: 0;
-    position: fixed;
-    display: block;
-    width: 25px;
-    height: 25px;
-    background-image: url("../imagenes/bg_star.png");
-    image-rendering: pixelated;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    animation-name: star_fall, star_rotate;
-    animation-duration: var(--dur) , 5s;
-    animation-delay: var(--delay), 0s;
-    animation-iteration-count: infinite, infinite;
-    animation-timing-function: linear,linear;
-
     
 }
 
