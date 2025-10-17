@@ -10,10 +10,6 @@
     from {transform: scaleX(0);}
     to {transform: scaleX(1);}
 }
-@keyframes bg_fade {
-    from {opacity: 0;}
-    to {opacity: 0.5;}
-}
 
 :root{
     /*Paleta de colores*/
@@ -38,8 +34,8 @@ main{
     align-items: center;
 
     /*Hacer elemento abarcar toda la pantalla*/
-    width: 100vw;
-    height: 100vh;
+    width: 100dvw;
+    height: 100dvh;
     margin: 0px;
     position: absolute;
     top: 0%;
@@ -62,7 +58,6 @@ section{
     text-align: center;
     
     background-color: var(--c3);
-
     height: 100%;
     padding-left: 25px;
     padding-right: 25px;
@@ -110,6 +105,8 @@ nav{
 }
 
 nav ul { 
+    color: var(--c4);
+    text-decoration: none;
     list-style: none;
     /*Centrar elementos*/
     display: flex;
@@ -120,7 +117,10 @@ nav ul {
     
 }
 
-nav ul li{
+a{
+    color: var(--c1);
+    text-decoration: none;
+
     /*Animacion para startup*/
     animation-name: elem_startup;
     animation-duration: 0.5s;
@@ -141,12 +141,13 @@ nav ul li{
     transition: 0.2s;
 }
 
-nav ul li:hover{
+a:hover{
     transform: translate(-5px,-5px);
     background-color: var(--c1);
     color: var(--c4);
     
 }
+
 
 /*Clases*/
 .gen_img{
@@ -182,12 +183,6 @@ nav ul li:hover{
 }
 
 #bg_gif{
-    /*Animacion para startup*/
-    animation-name: bg_fade;
-    animation-duration: 1.5s;
-    animation-delay: 0.8s;
-    animation-fill-mode:backwards;
-
     opacity: 0.5;
     background-image: url("../imagenes/index_anim.gif");
     background-size: cover;
