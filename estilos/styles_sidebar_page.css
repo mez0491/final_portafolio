@@ -74,6 +74,7 @@ h1{
 }
 
 p{
+    text-align: justify;
     font-size: 1rem;
 }
 
@@ -97,7 +98,7 @@ nav ul {
 
 .bar_title{
     background-color: var(--c2);
-    width: 400px;
+    width: 50%;
     height: 6px;
     margin-top: auto;
 }

@@ -61,12 +61,12 @@
 
 /*Imagenes*/
 .gen_img{
-    border-radius: 75%;
     /*Borde*/
     border-style: double;
     border-color: var(--c1);
     border-width: 5px;
 }
+
 /*Botones de lenguaje*/
 #lang_menu{
     position: fixed;
@@ -87,9 +87,6 @@
     margin: auto;
     
 }
-
-
-
 
 /*Tiempos de animacion*/
 .shorter_delay{

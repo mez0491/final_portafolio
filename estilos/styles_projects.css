@@ -5,6 +5,7 @@
     display: grid;
     place-items: center;
     grid-template-columns: 50% 50%;
+    padding: 0;
     margin: 25px;
 }
 
@@ -33,10 +34,10 @@
     color: var(--c1);
     text-decoration: none;
     /*Borde para selecciones*/
+    border-bottom-right-radius: 25%;
     border-width: 5px;
     border-color: var(--c6);
     border-style: solid;
-    border-bottom-right-radius: 25%;
     transform: translate(0px,0px);
     transition: 0.2s;
     margin: auto;

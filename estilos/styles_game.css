@@ -1,5 +1,4 @@
 .game_logo{
-    
     width: 50%;
     height: 50%;
     margin: auto;
@@ -8,18 +7,223 @@
 }
 /*Seccion principal de informacion*/
 .game_sect{
+    width: 100%;
+    height: fit-content;
     display: flex;
     flex-direction: row;
+    gap: 25px;
 }
-
+@media screen and (max-width : 800px) {
+    .game_sect{
+        flex-direction: column;
+    }
+}
+@media screen and (min-width : 800px) {
+    .game_sect{
+        flex-direction: row;
+    }
+}
+@media screen and (min-width : 1200px) {
+    .game_sect{
+        flex-direction: row;
+    }
+}
+/*Sinopsis*/
 .game_sect p {
-    flex:4;
+    flex:3;
+    text-align: justify;
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
 }
 /*Detalles de juego*/
 .game_details{
     flex:1;
+    
+    padding: 10px;
+}
+
+.game_details h2{
+    background-color: var(--c2);
+    color: var(--c1);
+    padding: 10px;
 }
 .game_details ul{
     list-style: none;
 }
 
+
+/*Contenedor de capturas*/
+.container_scs{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    padding: 0;
+    margin-top: 25px;
+    margin-right: auto;
+    gap: 5px;
+}
+.container_scs_small{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: auto;
+    gap: 5px;
+}
+
+/*Contenedor de capturas grandes*/
+@media screen and (max-width : 1000px) {
+    /*Convertir display de capturas a tabla*/
+    .container_scs{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (min-width : 1000px) {
+    /*Convertir display de capturas a tabla*/
+    .container_scs{
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media screen and (min-width : 1200px) {
+    /*Convertir display de capturas a flex*/
+    .container_scs{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/*Contenedor de capturas pequeñas*/
+@media screen and (max-width : 400px) {
+    /*Convertir display de capturas a tabla*/
+    .container_scs_small{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (min-width : 400px){
+    /*Convertir display de capturas a tabla*/
+    .container_scs_small{
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media screen and (min-width : 1000px){
+    /*Convertir display de capturas a tabla*/
+    .container_scs_small{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+/*Captura de pantalla*/
+.scs{
+    image-rendering: pixelated;
+    color: var(--c1);
+    text-decoration: none;
+    /*Borde para selecciones*/
+    border-width: 5px;
+    border-color: var(--c6);
+    border-style: solid;
+
+    /*Alinear*/
+    margin: auto;
+    /*Esconder elementos fuera del borde*/
+
+    /*Animacion para startup*/
+    animation-name: elem_startup;
+    animation-fill-mode:backwards;
+    animation-duration: 0.5s;
+    transform: translate(0px,0px);
+    transition: 0.2s;
+}
+
+
+/*Tamaños de screenshot*/
+.scs_main{
+    width: 640px;
+    height: 480px;
+}
+.scs_small{
+    width: 160px;
+    height: 120px;
+}
+
+/*Media para captura de pantalla principal*/
+@media screen and (max-width : 400px) {
+    .scs_main{
+        width: 320px;
+        height: 240px;
+        display: none;
+
+    }
+}
+@media screen and (min-width : 400px) {
+    .scs_main{
+        width: 320px;
+        height: 240px;
+        display: block;
+
+    }
+}
+@media screen and (min-width : 1000px ){
+    .scs_main{
+        width: 640px;
+        height: 480px;
+        display: block;
+    }
+}
+/*Media para captura de pantalla pequeñas*/
+@media screen and (max-width : 400px) {
+    /*Convertir display de capturas a tabla*/
+    .scs_small{
+        width: 160px;
+        height: 120px;
+    }
+}
+@media screen and (min-width : 400px){
+    /*Convertir display de capturas a tabla*/
+    .scs_small{
+        width: 80px;
+        height: 60px;
+    }
+}
+@media screen and (min-width : 1000px){
+    /*Convertir display de capturas a tabla*/
+    .scs_small{
+        width: 160px;
+        height: 120px;
+    }
+}
+
+/*Hover para mostrar imagen pequeña en imagen grande*/
+.scs_small:hover{
+    transform: translate(-5px,-5px);
+    background-color: var(--c1);
+    color: var(--c4);
+    
+}
+
+
+/*Video*/
+.video_container{
+    width: 100%;
+    height: 100%;
+    margin-top: 25px;
+    margin-right: auto;
+    padding: 0;
+}
+.vid{
+    /*Borde para selecciones*/
+    border-width: 5px;
+    border-color: var(--c6);
+    border-style: solid;
+    transition: 0.2s;
+    margin: auto;
+    padding: 0;
+}
+.vid_x_large{
+    aspect-ratio: 16/9;
+}

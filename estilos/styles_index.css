@@ -107,6 +107,7 @@ nav ul {
     animation-duration: 0.5s;
     animation-fill-mode:backwards;
 
+    border-radius: 75%;
     width: 200px;
     height: 200px;
     text-align: center;

@@ -2,12 +2,14 @@
     "en":{
         "home" : "Home",
         "about" : "About me",
-        "project" : "My projects"
+        "project" : "My projects",
+        "main" : ""
     },
     "es":{
         "home" : "Inicio",
         "about" : "Sobre mi",
-        "project" : "Mis proyectos"
+        "project" : "Mis proyectos",
+        "main" : "Soy un desarrollador de Mazatlán, Sinaloa. Toda mi vida he sido apasionado por los videojuegos, hasta el punto que empece a crearlos yo mismo!"
     },
     "fr":{
         "home" : "Commencer",
