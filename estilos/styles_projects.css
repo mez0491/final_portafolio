@@ -63,6 +63,7 @@
     margin-left: 0;
     margin-top: 0;
     padding: 15px;
+    font-size: 1.5rem;
 }
 
 .prj:hover h2{
@@ -122,3 +123,31 @@
     height: 250px;
 }
 
+/*Media querys para tamaño horizontal*/
+@media screen and (max-width : 800px) {
+    .prj_xlarge{
+        width: 150px;
+        height: 125px;
+    }
+    .prj h2{
+        font-size: 1rem;
+    }
+}
+@media screen and (min-width : 800px) {
+    .prj_xlarge{
+        width: 300px;
+        height: 150px;
+    }
+    .prj h2{
+        font-size: 1rem;
+    }
+}
+@media screen and (min-width : 1200px) {
+    .prj_xlarge{
+        width: 500px;
+        height: 250px;
+    }
+    .prj h2{
+        font-size: 1.5rem;
+    }
+}
