@@ -27,6 +27,8 @@
 .btn{
     color: var(--c1);
     text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
 
     /*Animacion para startup*/
     animation-name: elem_startup;
@@ -34,8 +36,7 @@
     animation-duration: 0.5s;
 
     padding: 20px;
-    text-align: center;
-    vertical-align: middle;
+    
     background-color: var(--c6) ;
     /*Borde para selecciones*/
     border-width: 5px;
@@ -66,6 +67,27 @@
     border-color: var(--c1);
     border-width: 5px;
 }
+/*Botones de lenguaje*/
+#lang_menu{
+    position: fixed;
+    left: 1%;
+    bottom: 1%;
+    display: flex;
+    gap: 10px;
+    z-index: 100;
+}
+
+.lang_button{
+    padding: 0;
+    display: inline;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    flex: 1;
+    margin: auto;
+    
+}
+
 
 
 

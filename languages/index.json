@@ -1,0 +1,20 @@
+{
+    "en":{
+        "name": "Carlos Meza",
+        "desc" : "Creating stories from above the stars.",
+        "about" : "About me",
+        "project" : "My projects"
+    },
+    "es":{
+        "name": "Carlos Meza",
+        "desc" : "Creando historias arriba de las estrellas.",
+        "about" : "Sobre mi",
+        "project" : "Mis proyectos"
+    },
+    "fr":{
+        "name": "Carlos Meza",
+        "desc" : "Créer des histoires au-dessus des étoiles.",
+        "about" : "sur moi",
+        "project" : "mes projets"
+    }
+}

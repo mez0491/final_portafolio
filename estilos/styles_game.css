@@ -6,3 +6,20 @@
     display: block;
     image-rendering: pixelated;
 }
+/*Seccion principal de informacion*/
+.game_sect{
+    display: flex;
+    flex-direction: row;
+}
+
+.game_sect p {
+    flex:2;
+}
+/*Detalles de juego*/
+.game_details{
+    flex:2;
+}
+.game_details ul{
+    list-style: none;
+}
+

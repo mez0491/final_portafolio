@@ -12,29 +12,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 
-
+    <script src="/script/lang_loader.js"></script>
 </head>
 <body>
     <div id="bg">
         <div id="bg_gif"></div>
     </div>
     <main>
+        <div id="lang_menu">
+            <button id="lang_button_en" class="btn lang_button">EN</button>
+            <button id="lang_button_es" class="btn lang_button">ES</button>
+            <button id="lang_button_fr" class="btn lang_button">FR</button>
+        </div>
+        
         <!--Contenido principal-->
         <section class="shorter_delay">
             <figure>
                 <img class="gen_img index_pfp short_delay" src="imagenes/perfil_full.jpg" alt="Imagen de perfil.">
             </figure>
-            <h1 class="medium_delay">
+            <h1 id="name" class="medium_delay">
                 Carlos Meza
             </h1>
-            <p class="long_delay">
+            <p id="desc" class="long_delay">
                 Creando historias arriba en las estrellas.
             </p>
             <!--Menu de navegacion-->
             <nav>
                 <ul>
-                    <a class="btn  longest_delay" href="about.html">Sobre mi</a>
-                    <a class="btn  longest_delay" href="projects.html">Mis proyectos</a>
+                    <a id="about" class="btn  longest_delay" href="about.html">Sobre mi</a>
+                    <a id="project" class="btn  longest_delay" href="projects.html">Mis proyectos</a>
                 </ul>
             </nav>
         </section>

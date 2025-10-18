@@ -1,0 +1,17 @@
+{
+    "en":{
+        "home" : "Home",
+        "about" : "About me",
+        "project" : "My projects"
+    },
+    "es":{
+        "home" : "Inicio",
+        "about" : "Sobre mi",
+        "project" : "Mis proyectos"
+    },
+    "fr":{
+        "home" : "Commencer",
+        "about" : "sur moi",
+        "project" : "mes projets"
+    }
+}
