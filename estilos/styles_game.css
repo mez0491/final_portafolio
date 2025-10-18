@@ -97,14 +97,21 @@
 }
 
 /*Contenedor de capturas pequeñas*/
-@media screen and (max-width : 400px) {
+@media screen and (max-width : 380px) {
     /*Convertir display de capturas a tabla*/
     .container_scs_small{
         display: flex;
         flex-direction: column;
     }
 }
-@media screen and (min-width : 400px){
+@media screen and (min-width : 380px) {
+    /*Convertir display de capturas a tabla*/
+    .container_scs_small{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+@media screen and (min-width : 600px){
     /*Convertir display de capturas a tabla*/
     .container_scs_small{
         display: flex;
@@ -149,15 +156,22 @@
 .scs_small{
     width: 160px;
     height: 120px;
+    filter: brightness(0.3);
 }
-
+/*Hover para mostrar imagen pequeña en imagen grande*/
+.scs_small:hover{
+    transform: translate(-5px,-5px);
+    background-color: var(--c1);
+    color: var(--c4);
+    filter: brightness(1.0);
+    
+}
 /*Media para captura de pantalla principal*/
 @media screen and (max-width : 400px) {
     .scs_main{
         width: 320px;
         height: 240px;
         display: none;
-
     }
 }
 @media screen and (min-width : 400px) {
@@ -176,14 +190,14 @@
     }
 }
 /*Media para captura de pantalla pequeñas*/
-@media screen and (max-width : 400px) {
+@media screen and (max-width : 600px) {
     /*Convertir display de capturas a tabla*/
     .scs_small{
         width: 160px;
         height: 120px;
     }
 }
-@media screen and (min-width : 400px){
+@media screen and (min-width : 600px){
     /*Convertir display de capturas a tabla*/
     .scs_small{
         width: 80px;
@@ -198,13 +212,7 @@
     }
 }
 
-/*Hover para mostrar imagen pequeña en imagen grande*/
-.scs_small:hover{
-    transform: translate(-5px,-5px);
-    background-color: var(--c1);
-    color: var(--c4);
-    
-}
+
 
 
 /*Video*/
