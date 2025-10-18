@@ -126,7 +126,7 @@
 /*Media querys para tamaño horizontal*/
 @media screen and (max-width : 800px) {
     .prj_xlarge{
-        width: 150px;
+        width: 250px;
         height: 125px;
     }
     .prj h2{
