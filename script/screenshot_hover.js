@@ -14,7 +14,7 @@ function setup(){
 
 
     /*Asignar un event listener a todas las capturas pequeñas */
-    for (let index = 0; index < small_screenshots.length; index++) {
+    for (index = 0; index < small_screenshots.length; index++) {
         const element = small_screenshots[index];
 
         /*Enviar el src del elemento a la funcion de hover*/

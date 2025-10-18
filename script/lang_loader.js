@@ -31,7 +31,7 @@ async function find_elements_by_id(id_data){
     console.log(key_names);
     
     /*Buscar dentro de todas las llaves del arreglo */
-    for (let index = 0; index < key_names.length; index++) {
+    for (index = 0; index < key_names.length; index++) {
         
         /*Encontrar el elemento usando ids */
         const found_item = document.getElementById(key_names[index]);
