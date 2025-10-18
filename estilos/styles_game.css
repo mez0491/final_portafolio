@@ -13,11 +13,11 @@
 }
 
 .game_sect p {
-    flex:2;
+    flex:4;
 }
 /*Detalles de juego*/
 .game_details{
-    flex:2;
+    flex:1;
 }
 .game_details ul{
     list-style: none;

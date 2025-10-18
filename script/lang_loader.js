@@ -44,18 +44,30 @@ async function find_elements_by_id(id_data){
 }
 /*Botones de lenguaje*/
 function assign_buttons(){
+    /*Boton ingles */
     const boton_en = document.getElementById("lang_button_en");
     boton_en.addEventListener('click', function(event) {
         main('languages/index.json', 'en');
     });
+    boton_en.addEventListener('touch_end', function(event) {
+        main('languages/index.json', 'en');
+    });
 
+    /*Boton español */
     const boton_es = document.getElementById("lang_button_es");
     boton_es.addEventListener('click', function(event) {
         main('languages/index.json', 'es');
     });
 
+    boton_es.addEventListener('touch_end', function(event) {
+        main('languages/index.json', 'es');
+    });
+    /*Boton frances */
     const boton_fr = document.getElementById("lang_button_fr");
     boton_fr.addEventListener('click', function(event) {
+        main('languages/index.json', 'fr');
+    });
+    boton_fr.addEventListener('touch_end', function(event) {
         main('languages/index.json', 'fr');
     });
 }
