@@ -49,7 +49,7 @@ function assign_buttons(){
     boton_en.addEventListener('click', function(event) {
         main('languages/index.json', 'en');
     });
-    boton_en.addEventListener('touch_end', function(event) {
+    boton_en.addEventListener('touchend', function(event) {
         main('languages/index.json', 'en');
     });
 
@@ -59,7 +59,7 @@ function assign_buttons(){
         main('languages/index.json', 'es');
     });
 
-    boton_es.addEventListener('touch_end', function(event) {
+    boton_es.addEventListener('touchend', function(event) {
         main('languages/index.json', 'es');
     });
     /*Boton frances */
@@ -67,7 +67,7 @@ function assign_buttons(){
     boton_fr.addEventListener('click', function(event) {
         main('languages/index.json', 'fr');
     });
-    boton_fr.addEventListener('touch_end', function(event) {
+    boton_fr.addEventListener('touchend', function(event) {
         main('languages/index.json', 'fr');
     });
 }

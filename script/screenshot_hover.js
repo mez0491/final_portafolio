@@ -21,7 +21,9 @@ function setup(){
         element.addEventListener("mouseenter",function(event) {
         switch_main_screenshot(element.src);
         });
-        
+        element.addEventListener("touchend",function(event) {
+        switch_main_screenshot(element.src);
+        });
         
     }
 }
