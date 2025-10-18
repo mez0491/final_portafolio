@@ -1,0 +1,124 @@
+/*Contenedor de Displays*/
+.container_prj{
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 50% 50%;
+    margin: 25px;
+}
+
+/*Media querys para tamaño horizontal*/
+@media screen and (max-width : 800px) {
+    .container_prj{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (min-width : 800px) {
+    .container_prj{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (min-width : 1200px) {
+    .container_prj{
+        display: grid;
+    }
+}
+
+
+/*Displays*/
+.prj{
+    color: var(--c1);
+    text-decoration: none;
+    /*Borde para selecciones*/
+    border-width: 5px;
+    border-color: var(--c6);
+    border-style: solid;
+    border-bottom-right-radius: 25%;
+    transform: translate(0px,0px);
+    transition: 0.2s;
+    margin: auto;
+    /*Esconder elementos fuera del borde*/
+    overflow: hidden;
+    /*Animacion para startup*/
+    animation-name: elem_startup;
+    animation-fill-mode:backwards;
+    animation-duration: 0.5s;
+
+}
+
+.prj:hover{
+    transform: translate(-5px,-5px);
+    background-color: var(--c1);
+    color: var(--c2); 
+}
+
+/*Titulo proyecto*/
+.prj h2{
+    background-color: var(--c2);
+    width: 100%;
+    height: fit-content;
+    margin-left: 0;
+    margin-top: 0;
+    padding: 15px;
+}
+
+.prj:hover h2{
+    background-color: var(--c1);
+}
+
+/*Descripcion proyecto*/
+.prj p{
+    font-size: 1rem;
+    color: var(--c1); 
+    width: fit-content;
+    height: fit-content;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 15px;
+
+    /*Effecto de hover*/
+    opacity: 0.0;
+    transition-duration: 0.2s;
+    transform:translateY(-10px);
+}
+
+.prj:hover p{
+    opacity: 1.0;
+    transform:translateY(0px);
+}
+
+/*Imagen proyecto*/
+.prj img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    padding: 0px;
+    margin: 0px;
+    max-width: 100%;
+    max-height: 100%;
+    scale: 1.0;
+    filter: sepia(0)brightness(1);
+    transition-duration: 0.2s;
+    
+}
+
+.prj:hover img{
+    scale: 1.1;
+    filter: sepia(0.8) brightness(0.2);
+
+}
+
+/*Tamaños Displays*/
+.prj_small{
+    width: 450px;
+    height: 225px;
+}
+.prj_xlarge{
+    width: 500px;
+    height: 250px;
+}
+

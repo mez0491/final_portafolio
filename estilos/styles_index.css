@@ -1,41 +1,30 @@
-/*Fuente*/
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-
 /*Animacion de startup para elementos*/
-@keyframes elem_startup {
-    from {transform: translateY(20px); opacity: 0;}
-    to {transform: translateY(0px);opacity: 1;}
-}
 @keyframes section_open {
     from {transform: scaleX(0);}
     to {transform: scaleX(1);}
 }
-
-:root{
-    /*Paleta de colores*/
-    --c1: #f7f7f7; --c2: #121ecb; --c3: #13133a; --c4: #0b0b0f; --c5: #212ddc; --c6: #23234a;
-}
-
-
 /*Fondo*/
 body{
     color: var(--c1);
     font-family: "DM Sans", sans-serif;
     background-color: var(--c1);
     z-index: 0;
+    padding: 0px;
+    margin: 0px;
 }
 
 /*Contenido principal*/
 main{
-    
     /*Centrar contenido*/
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 25px;
 
     /*Hacer elemento abarcar toda la pantalla*/
     width: 100dvw;
     height: 100dvh;
+    padding: 0px;
     margin: 0px;
     position: absolute;
     top: 0%;
@@ -43,11 +32,9 @@ main{
 }
 
 section{
-
     /*Animacion para startup*/
     animation-name: section_open;
     animation-duration: 0.2s;
-    animation-delay: 0.2s;
     animation-fill-mode:backwards;
 
     /*Centrar contenido*/
@@ -63,6 +50,7 @@ section{
     padding-right: 25px;
     box-shadow: 0px 0px 25px black;
 }
+/*Media querys para tamaño horizontal*/
 @media screen and (max-width : 800px) {
     section{
         width: 100%;
@@ -85,7 +73,6 @@ h1{
     /*Animacion para startup*/
     animation-name: elem_startup;
     animation-duration: 0.5s;
-    animation-delay: 0.6s;
     animation-fill-mode:backwards;
     
 }
@@ -94,7 +81,6 @@ p{
     /*Animacion para startup*/
     animation-name: elem_startup;
     animation-duration: 0.5s;
-    animation-delay: 0.8s;
     animation-fill-mode:backwards;
     
 }
@@ -115,52 +101,10 @@ nav ul {
     
 }
 
-a{
-    color: var(--c1);
-    text-decoration: none;
-
-    /*Animacion para startup*/
-    animation-name: elem_startup;
-    animation-duration: 0.5s;
-    animation-delay: 1s;
-    animation-fill-mode:backwards;
-    
-
-    padding: 20px;
-    text-align: center;
-
-    background-color: var(--c6) ;
-    /*Borde para selecciones*/
-    border-width: 5px;
-    border-color: var(--c6);
-    border-style: solid;
-    /*Crear duplicado usando box shadow*/
-
-    transition: 0.2s;
-}
-
-a:hover{
-    transform: translate(-5px,-5px);
-    background-color: var(--c1);
-    color: var(--c4);
-    
-}
-
-
-/*Clases*/
-.gen_img{
-    border-radius: 75%;
-    /*Borde*/
-    border-style: double;
-    border-color: var(--c1);
-    border-width: 5px;
-}
-
 .index_pfp{
     /*Animacion para startup*/
     animation-name: elem_startup;
     animation-duration: 0.5s;
-    animation-delay: 0.4s;
     animation-fill-mode:backwards;
 
     width: 200px;
@@ -170,16 +114,6 @@ a:hover{
 }
 
 /*Clases para fondo*/
-#bg{
-    background-color: #ffffff;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
 #bg_gif{
     opacity: 0.5;
     background-image: url("../imagenes/index_anim.gif");

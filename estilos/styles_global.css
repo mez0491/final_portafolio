@@ -1,0 +1,87 @@
+/*Fuente*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/*Animaciones*/
+@keyframes elem_startup {
+    from {transform: translateY(20px); opacity: 0;}
+    to {transform: translateY(0px);opacity: 1;}
+}
+
+:root{
+
+    /*Paleta de colores*/
+    --c1: #f7f7f7; --c2: #121ecb; --c3: #13133a; --c4: #0b0b0f; --c5: #212ddc; --c6: #23234a;
+}
+/*ID de fondo*/
+#bg{
+    background-color: #ffffff;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+}
+/*Clases*/
+/*Botones*/
+.btn{
+    color: var(--c1);
+    text-decoration: none;
+
+    /*Animacion para startup*/
+    animation-name: elem_startup;
+    animation-fill-mode:backwards;
+    animation-duration: 0.5s;
+
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: var(--c6) ;
+    /*Borde para selecciones*/
+    border-width: 5px;
+    border-color: var(--c6);
+    border-style: solid;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    transition: 0.2s;
+}
+
+.btn:hover{
+    transform: translate(-5px,-5px);
+    background-color: var(--c1);
+    color: var(--c4);
+    
+}
+
+.btn_xlarge{
+    width: 100px;
+
+}
+
+/*Imagenes*/
+.gen_img{
+    border-radius: 75%;
+    /*Borde*/
+    border-style: double;
+    border-color: var(--c1);
+    border-width: 5px;
+}
+
+
+
+/*Tiempos de animacion*/
+.shorter_delay{
+    animation-delay: 0.2s;
+}
+.short_delay{
+    animation-delay: 0.4s;
+}
+.medium_delay{
+    animation-delay: 0.6s;
+}
+.long_delay{
+    animation-delay: 0.8s;
+}
+.longest_delay{
+    animation-delay: 1.0s;
+}
