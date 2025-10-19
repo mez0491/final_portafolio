@@ -86,11 +86,23 @@
 /*Botones de lenguaje*/
 #lang_menu{
     position: fixed;
-    left: 1%;
-    bottom: 1%;
     display: flex;
     gap: 10px;
     z-index: 100;
+}
+
+.lang_menu_hor{
+    flex-direction: row;
+    left: 1%;
+    bottom: 1%;
+}
+
+.lang_menu_vert{
+    flex-direction: column;
+    left: 1%;
+    top: 1%;
+    width: 5px;
+    height: 20%;
 }
 
 .lang_button{
