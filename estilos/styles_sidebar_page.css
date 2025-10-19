@@ -17,8 +17,6 @@ main{
     /*Centrar contenido*/
     display: flex;
     gap: 25px;
-
-    /*Hacer elemento abarcar toda la pantalla*/
 }
 /*Barra lateral*/
 aside{
@@ -34,23 +32,59 @@ aside{
     padding: 1%;
     box-sizing: border-box;
 }
+/*Boton de menu de navegacion para pantallas pequeñas*/
+.nav_button{
+
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    z-index: 999;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+}
+.nav_button span{
+    margin: auto;
+}
+/*Menu desplegable de pantallas pequeñas*/
+.small_side_bar{
+    position: fixed;    
+    width: 220px;
+    height: 100%;
+
+    display: block;
+    z-index: 100;
+
+}
 
 /*Media querys para tamaño horizontal*/
 @media screen and (max-width : 800px) {
-    aside{
+    .big_side_bar{
         display: none;
     }
-}
-@media screen and (min-width : 800px) {
-    aside{
-        display: none;
-    }
-}
-@media screen and (min-width : 1400px) {
-    aside{
+    .nav_button{
         display: block;
     }
 }
+@media screen and (min-width : 800px) {
+    .big_side_bar{
+        display: none;
+    }
+    .nav_button{
+        display: block;
+    }
+}
+@media screen and (min-width : 1400px) {
+    .big_side_bar{
+        display: block;
+    }
+    .nav_button{
+        display: none;
+    }
+}
+
+
 
 section{
     margin: auto;

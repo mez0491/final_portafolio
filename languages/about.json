@@ -4,20 +4,36 @@
         "about" : "About me",
         "project" : "My projects",
         "about_me" : "About me",
-        "main" : "I'm a game developer from Mazatlán, Sinaloa studying at Universidad Politecnica de Sinaloa. I've loved videogames all my life, to the point I started making them myself!"
+        "main" : "I'm a game developer from Mazatlán, Sinaloa studying at Universidad Politecnica de Sinaloa. I've loved videogames all my life, to the point I started making them myself! My goal is to be able to create experiences that make the world just a little bit brighter!",
+        "tech_title" : "Languages and Tools",
+        "tech_desc" : "<ul>Languages and Formats<ul><li>GDScript</li><li>JSON</li><li>JavaScript</li><li>C#</li><li>C++</li></ul></ul><ul>Tools and Software<ul><li>Godot</li><li>VSCode </li><li>Furnace Tracker</li></ul></ul>",
+        "cv_title" : "My CV",
+        "cv_desc" : "If you're interested, you can download a copy of my CV!",
+        "download_title" : "Download <span class= 'material-symbols-outlined' >download</span>"
     },
     "es":{
         "home" : "Inicio",
         "about" : "Sobre mi",
         "project" : "Mis proyectos",
         "about_me" : "Sobre mi",
-        "main" : "Soy un desarrollador de Mazatlán, Sinaloa estudiando en la Universidad Politecnica de Sinaloa.. Toda mi vida he sido apasionado por los videojuegos, hasta el punto que empece a crearlos yo mismo! Mi meta es poder crear proyectos que den un poquito de alegria al mundo!"
+        "main" : "Soy un desarrollador de Mazatlán, Sinaloa estudiando en la Universidad Politécnica de Sinaloa.. Toda mi vida he sido apasionado por los videojuegos, hasta el punto que empecé a crearlos yo mismo! Mi meta es poder crear experiencias que den un poquito de alegría al mundo!",
+        "tech_title" : "Lenguajes y Herramientas",
+        "tech_desc" : "<ul>Lenguajes y Formatos<ul><li>GDScript</li><li>JSON</li><li>JavaScript</li><li>C#</li><li>C++</li></ul></ul><ul>Herramientas y Software<ul><li>Godot</li><li>VSCode </li><li>Furnace Tracker</li></ul></ul>",
+        "cv_title" : "Mi CV",
+        "cv_desc" : "Si esta interesado, puede descargar una copia de mi CV!",
+        "download_title" : "Descargar <span class= 'material-symbols-outlined' >download</span>"
+
     },
     "fr":{
         "home" : "Commencer",
         "about" : "sur moi",
         "project" : "mes projets",
         "about_me" : "sur moi",
-        "main":"Je suis développeur de jeux vidéo originaire de Mazatlán, dans l'État de Sinaloa, et j'étudie à l'Université polytechnique de Sinaloa. J'ai toujours aimé les jeux vidéo, au point de commencer à en créer moi-même!"
+        "main":"Je suis développeur de jeux vidéo originaire de Mazatlán, dans l'État de Sinaloa, et j'étudie à l'Université polytechnique de Sinaloa. J'ai toujours aimé les jeux vidéo, au point de commencer à en créer moi-même! Mon objectif est de pouvoir créer des expériences qui rendent le monde un peu plus lumineux !",
+        "tech_title" : "Langages et outils",
+        "tech_desc" : "<ul>Langues et formats<ul><li>GDScript</li><li>JSON</li><li>JavaScript</li><li>C#</li><li>C++</li></ul></ul><ul>Outils et logiciels<ul><li>Godot</li><li>VSCode </li><li>Furnace Tracker</li></ul></ul>",
+        "cv_title" : "Mon CV",
+        "cv_desc" : "Si vous êtes intéressé, vous pouvez télécharger une copie de mon CV !",
+        "download_title" : "Télécharger <span class= 'material-symbols-outlined' >download</span>"
     }
 }

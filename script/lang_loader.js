@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded",assign_buttons);
 var target_path;
 
 function setup(){
+    /*Revisar si hay cookies de lenguaje*/
+
     /*Encontrar el camino hacia el archivo de lenguajes*/
     const element = document.getElementById("lang_file");
     target_path = element.href;
@@ -13,6 +15,9 @@ function setup(){
 
     main(target_path,prefered_language);
 }
+
+
+
 
 async function main(file_path,lang){
     await get_json(file_path,lang);
@@ -46,8 +51,13 @@ async function find_elements_by_id(id_data){
         /*Encontrar el elemento usando ids */
         const found_item = document.getElementById(key_names[index]);
 
-        /*Cambiar texto dentro de los elementos*/
-        found_item.textContent = id_data[key_names[index]];
+        if (found_item){
+            /*Cambiar texto dentro de los elementos*/
+            found_item.innerHTML = id_data[key_names[index]];
+        }else{
+            console.log("Elemento no encontrado!");
+        }
+        
         
     }
 
@@ -56,29 +66,51 @@ async function find_elements_by_id(id_data){
 function assign_buttons(){
     /*Boton ingles */
     const boton_en = document.getElementById("lang_button_en");
-    boton_en.addEventListener('click', function(event) {
-        main(target_path, 'en');
-    });
-    boton_en.addEventListener('touchend', function(event) {
-        main(target_path, 'en');
-    });
+    if (boton_en){
+        boton_en.addEventListener('click', function(event) {
+            main(target_path, 'en');
+        });
+        boton_en.addEventListener('touchend', function(event) {
+            main(target_path, 'en');
+        });
+        /*Si existe un elemento de menu lateral, conectar el boton para cerrarlo al ser presionado*/
+        if (side_bar){
+            boton_en.addEventListener("click",toggle_menu);
+            boton_en.addEventListener("touchend",toggle_menu);
+        }
+    }
 
     /*Boton español */
     const boton_es = document.getElementById("lang_button_es");
-    boton_es.addEventListener('click', function(event) {
-        main(target_path, 'es');
-    });
+    if (boton_es){
+        boton_es.addEventListener('click', function(event) {
+            main(target_path, 'es');
+        });
+        boton_es.addEventListener('touchend', function(event) {
+            main(target_path, 'es');
+        });
+        /*Si existe un elemento de menu lateral, conectar el boton para cerrarlo al ser presionado*/
+        if (side_bar){
+            boton_es.addEventListener("click",toggle_menu);
+            boton_es.addEventListener("touchend",toggle_menu);
+        }
+    }
 
-    boton_es.addEventListener('touchend', function(event) {
-        main(target_path, 'es');
-    });
     /*Boton frances */
     const boton_fr = document.getElementById("lang_button_fr");
-    boton_fr.addEventListener('click', function(event) {
-        main(target_path, 'fr');
-    });
-    boton_fr.addEventListener('touchend', function(event) {
-        main(target_path, 'fr');
-    });
+    if (boton_fr){
+        boton_fr.addEventListener('click', function(event) {
+            main(target_path, 'fr');
+        });
+        boton_fr.addEventListener('touchend', function(event) {
+            main(target_path, 'fr');
+        });
+        /*Si existe un elemento de menu lateral, conectar el boton para cerrarlo al ser presionado*/
+        if (side_bar){
+            boton_fr.addEventListener("click",toggle_menu);
+            boton_fr.addEventListener("touchend",toggle_menu);
+        }
+    }
+
 }
 

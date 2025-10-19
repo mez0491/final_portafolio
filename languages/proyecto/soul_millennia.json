@@ -1,0 +1,29 @@
+{
+    "en":{
+        "main_desc": "The gates to the spirit domain have been opened! Paranormal activity lurks in the shadows of Orcana. Solve the mysteries that lie under the moonlight before the spirit domain consumes our world! <br>This is my biggest project to date. In active development with art, music and programming done entirely by me.",
+        "details_title" : "Details",
+        "details_desc" : "<li>Genre<ul><li>RPG</li></ul></li><li>State<ul><li>In development</li></ul></li><li>Tech / Languages<ul><li>Godot</li><li>Furnace</li><li>GDScript</li><li>JSON</li></ul></li><li>Release<ul><li>TBA</li></ul></li>",
+        "roles_title" : "My contributions",
+        "roles_desc" : "<li>Main developer</li><li>Programmer</li><li>Artist</li><li>Musician</li>",
+        "screenshot_title" : "Screenshots",
+        "music_title" : "Music"
+    },
+    "es":{
+        "main_desc": "¡Las puertas al mundo de los espiritus han sido abiertas! Actividad paranormal vive entre las sombras de la ciudad de Orcana. ¡Resuelve los misterios que yacen bajo la luna antes de que el mundo de los espiritus consuma el mundo de los vivos! <br>Este es mi proyecto más grande hasta ahora. En activo desarrollo y con arte, musica y programacion hechas completamente por mi.",
+        "details_title" : "Detalles",
+        "details_desc" : "<li>Genero<ul><li>RPG</li></ul></li><li>Estado<ul><li>En desarrollo</li></ul></li><li>Tecnologia / Lenguajes<ul><li>Godot</li><li>Furnace</li><li>GDScript</li><li>JSON</li></ul></li><li>Lanzamiento<ul><li>TBA</li></ul></li>",
+        "roles_title" : "Mis contribuciones",
+        "roles_desc" : "<li>Desarollador principal</li><li>Programador</li><li>Artista</li><li>Musico</li>",
+        "screenshot_title" : "Screenshots",
+        "music_title" : "Musica"
+    },
+    "fr":{
+        "main_desc": "Les portes du royaume des esprits sont ouvertes ! Une activité paranormale rôde dans l'ombre d'Orcana. Résolvez les mystères qui se cachent sous la lumière de la lune avant que le royaume des esprits ne dévore notre monde ! <br>C'est mon plus gros projet à ce jour. En développement actif, les graphismes, la musique et la programmation sont entièrement de mon fait.",
+        "details_title" : "Détails",
+        "details_desc" : "<li>Genre<ul><li>RPG</li></ul></li><li>l' état<ul><li>En développement</li></ul></li><li>Technologie/Langues<ul><li>Godot</li><li>Furnace</li><li>GDScript</li><li>JSON</li></ul></li><li>la parution<ul><li>TBA</li></ul></li>",
+        "roles_title" : "Mes contributions",
+        "roles_desc" : "<li>Développeur principal</li><li>Programmeur</li><li>Artiste</li><li>Musicien</li>",
+        "screenshot_title" : "Captures d'écran",
+        "music_title" : "Musique"
+    }
+}

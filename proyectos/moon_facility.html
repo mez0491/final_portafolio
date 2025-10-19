@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="../estilos/styles_game.css">
     <title>Carlos Meza | Proyectos</title>
 
+    <link id="lang_file" href="../languages/proyecto/moon_facility.json">
+    <script src="../script/nav_button.js"></script>
+    <script src="../script/lang_loader.js"></script>
     <script src="../script/screenshot_hover.js"></script>
+    
 
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
@@ -21,27 +25,35 @@
 <body>
     <main>
         <!--Menu de navegacion-->
-        <aside>
+        <!--Menu de navegacion pequeño-->
+        <button id="nav_menu_button" class="btn nav_button"><span class="material-symbols-outlined">menu</span></button>
+        <!--Menu de navegacion grande/default-->
+        <aside id="sidebar" class="big_side_bar">
             <nav>
                 <ul>
-                    <a class="btn short_delay" href="../index.html">Inicio</a>
-                    <a class="btn short_delay" href="../about.html">Sobre mi</a>
-                    <a class="btn short_delay" href="../projects.html">Mis proyectos</a>
+                    <a id="home" class="btn shorter_delay" href="../index.html">Inicio</a>
+                    <a id="about" class="btn shorter_delay" href="../about.html">Sobre mi</a>
+                    <a id="project" class="btn shorter_delay" href="../projects.html">Mis proyectos</a>
                 </ul>
             </nav>
+            <div id="lang_menu">
+                <button id="lang_button_en" class="btn lang_button shorter_delay">EN</button>
+                <button id="lang_button_es" class="btn lang_button shorter_delay">ES</button>
+                <button id="lang_button_fr" class="btn lang_button shorter_delay">FR</button>
+            </div>
         </aside>
         <section>
             <img class="game_logo" src="../imagenes/proyecto/moon_facility_logo.png" alt="Logo Moon Facility">
 
             <!--Sinopsis e informacion general-->
             <div class="game_sect">
-                <p>
+                <p id="main_desc">
                     El segundo juego completo realizado por mi. Contiene todas las cualidades del proyecto anterior, esta vez portando un soundtrack original por MistyRockandRoll y Hollie Taylor. Creado para refinar mis habilidades como desarrollador y practica para abordar proyectos más grandes.
                 </p>
 
                 <div class="game_details">
-                    <h2>Detalles</h2>
-                    <ul>
+                    <h2 id="details_title">Detalles</h2>
+                    <ul id="details_desc">
                         <li>Genero
                             <ul><li>Plataformas</li></ul>
                         </li>
@@ -55,20 +67,20 @@
                             <ul><li>2024</li></ul>
                         </li>
                     </ul>
-                    <h2>Descargas</h2>
+                    <h2 id="download_title">Descargas</h2>
                     <!--Menu de descargas-->
                     <nav>
                         <ul>
-                            <a class="btn btn_xlarge short_delay" target="_blank" href="https://gamejolt.com/games/sonicmoonfacility/975042">Gamejolt<span class="material-symbols-outlined">open_in_new</span></a>
+                            <a id="download_button" class="btn btn_xlarge short_delay" target="_blank" href="https://gamejolt.com/games/sonicmoonfacility/975042">Gamejolt<span class="material-symbols-outlined">open_in_new</span></a>
                         </ul>
                     </nav>
                 </div>
             </div>
             <!--Contribuciones y capturas de pantalla-->
-            <h2>Mis contribuciones</h2>
+            <h2 id="roles_title">Mis contribuciones</h2>
             <div class="bar_title"></div>
             <p>
-                <ul>
+                <ul id="roles_desc">
                     <li>
                         Desarollador principal
                     </li>
@@ -81,7 +93,7 @@
                 </ul>
             </p>
             <!--Capturas de pantalla-->
-            <h2>Screenshots</h2>
+            <h2 id="screenshot_title">Screenshots</h2>
             <div class="bar_title"></div>
             <ul class="container_scs">
                 <img id = "main_scs" class="scs scs_main scs_main_wide shorter_delay" src="../imagenes/proyecto/soul_millennia.png" alt="Moon Facility Screenshot">        
@@ -95,7 +107,7 @@
                     <img class="scs scs_small shorter_delay" src="../imagenes/proyecto/screenshot/moon_facility_scs6.png" alt="Moon Facility Screenshot">
                 </ul>
             </ul>
-            <h2>Musica</h2>
+            <h2 id="music_title">Musica</h2>
             <div class="bar_title"></div>
             <ul class="video_container">
                 <iframe class="vid vid_x_large" src="https://www.youtube.com/embed/videoseries?si=c1do12KaFHeWP139&amp;list=PLE5dndlh2tbbPt2K0iBdf9_Ujlpu2nIQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

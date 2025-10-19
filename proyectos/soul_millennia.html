@@ -6,16 +6,17 @@
     <!--Estilos-->
     <link rel="stylesheet" href="../estilos/styles_global.css">
     <link rel="stylesheet" href="../estilos/styles_sidebar_page.css">
-   
     <link rel="stylesheet" href="../estilos/styles_game.css">
     <title>Carlos Meza | Proyectos</title>
 
+    <link id="lang_file" href="../languages/proyecto/soul_millennia.json">
+    <script src="../script/nav_button.js"></script>
+    <script src="../script/lang_loader.js"></script>
     <script src="../script/screenshot_hover.js"></script>
     
+
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-
-
 
 </head>
 <div id="bg">
@@ -24,21 +25,29 @@
 <body>
     <main>
         <!--Menu de navegacion-->
-        <aside>
+        <!--Menu de navegacion pequeño-->
+        <button id="nav_menu_button" class="btn nav_button"><span class="material-symbols-outlined">menu</span></button>
+        <!--Menu de navegacion grande/default-->
+        <aside id="sidebar" class="big_side_bar">
             <nav>
                 <ul>
-                    <a class="btn short_delay" href="../index.html">Inicio</a>
-                    <a class="btn short_delay" href="../about.html">Sobre mi</a>
-                    <a class="btn short_delay" href="../projects.html">Mis proyectos</a>
+                    <a id="home" class="btn shorter_delay" href="../index.html">Inicio</a>
+                    <a id="about" class="btn shorter_delay" href="../about.html">Sobre mi</a>
+                    <a id="project" class="btn shorter_delay" href="../projects.html">Mis proyectos</a>
                 </ul>
             </nav>
+            <div id="lang_menu">
+                <button id="lang_button_en" class="btn lang_button shorter_delay">EN</button>
+                <button id="lang_button_es" class="btn lang_button shorter_delay">ES</button>
+                <button id="lang_button_fr" class="btn lang_button shorter_delay">FR</button>
+            </div>
         </aside>
         <section>
             <img class="game_logo" src="../imagenes/proyecto/soul_millennia_logo.png" alt="Logo Soul Millennia">
 
             <!--Sinopsis e informacion general-->
             <div class="game_sect">
-                <p>
+                <p id="main_desc">
                     ¡Las puertas al mundo de los espiritus han sido abiertas! 
                     Actividad paranormal vive entre las sombras de la ciudad de Orcana. ¡Resuelve los misterios que yacen bajo la luna 
                     antes de que el mundo de los espiritus consuma el mundo de los vivos! <br>
@@ -46,8 +55,8 @@
                 </p>
 
                 <div class="game_details">
-                    <h2>Detalles</h2>
-                    <ul>
+                    <h2 id="details_title">Detalles</h2>
+                    <ul id="details_desc">
                         <li>Genero
                             
                             <ul><li>RPG</li></ul>
@@ -68,10 +77,10 @@
                 </div>
             </div>
             <!--Contribuciones y capturas de pantalla-->
-            <h2>Mis contribuciones</h2>
+            <h2 id="roles_title">Mis contribuciones</h2>
             <div class="bar_title"></div>
             <p>
-                <ul>
+                <ul id="roles_desc">
                     <li>
                         Desarollador principal
                     </li>
@@ -87,7 +96,7 @@
                 </ul>
             </p>
             <!--Capturas de pantalla-->
-            <h2>Screenshots</h2>
+            <h2 id="screenshot_title">Screenshots</h2>
             <div class="bar_title"></div>
             <ul class="container_scs">
                 <img id = "main_scs" class="scs scs_main shorter_delay" src="../imagenes/proyecto/soul_millennia.png" alt="Soul Millennia">        
@@ -101,7 +110,7 @@
                     <img class="scs scs_small shorter_delay" src="../imagenes/proyecto/screenshot/soul_millennia_scs6.png" alt="Soul Millennia">
                 </ul>
             </ul>
-            <h2>Musica</h2>
+            <h2 id="music_title">Musica</h2>
             <div class="bar_title"></div>
             <ul class="video_container">
                 <iframe class="vid vid_x_large" src="https://www.youtube.com/embed/videoseries?si=QTX1CGFkjUKJVlIk&amp;list=PLXm6uSEMogUTkttqu-4uHJdWjxgZ0W7TP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

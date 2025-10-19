@@ -10,7 +10,10 @@
     <title>Carlos Meza | Sobre mi</title>
     
     <link id="lang_file" href="./languages/about.json">
+    <script src="./script/nav_button.js"></script>
     <script src="./script/lang_loader.js"></script>
+    
+
 
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
@@ -23,20 +26,23 @@
 <body>
 
     <main>
-        <div id="lang_menu">
-            <button id="lang_button_en" class="btn lang_button longest_delay">EN</button>
-            <button id="lang_button_es" class="btn lang_button longest_delay">ES</button>
-            <button id="lang_button_fr" class="btn lang_button longest_delay">FR</button>
-        </div>
         <!--Menu de navegacion-->
-        <aside>
+        <!--Menu de navegacion pequeño-->
+        <button id="nav_menu_button" class="btn nav_button"><span class="material-symbols-outlined">menu</span></button>
+        <!--Menu de navegacion grande/default-->
+        <aside id="sidebar" class="big_side_bar">
             <nav>
                 <ul>
-                    <a id="home" class="btn short_delay" href="index.html">Inicio</a>
-                    <a id="about" class="btn short_delay" href="about.html">Sobre mi</a>
-                    <a id="project" class="btn short_delay" href="projects.html">Mis proyectos</a>
+                    <a id="home" class="btn shorter_delay" href="index.html">Inicio</a>
+                    <a id="about" class="btn shorter_delay" href="about.html">Sobre mi</a>
+                    <a id="project" class="btn shorter_delay" href="projects.html">Mis proyectos</a>
                 </ul>
             </nav>
+            <div id="lang_menu">
+                <button id="lang_button_en" class="btn lang_button shorter_delay">EN</button>
+                <button id="lang_button_es" class="btn lang_button shorter_delay">ES</button>
+                <button id="lang_button_fr" class="btn lang_button shorter_delay">FR</button>
+            </div>
         </aside>
         <section>
             <h1 id="about_me">
@@ -44,17 +50,16 @@
             </h1>
             <div class="bar_title"></div>
             <p id="main" class="main_desc">
-                Soy un desarrollador de Mazatlán, Sinaloa estudiando en la Universidad Politecnica de Sinaloa. Toda mi vida he sido apasionado por los videojuegos, hasta el punto que empece a crearlos yo mismo!
+                Soy un desarrollador de Mazatlán, Sinaloa estudiando en la Universidad Politécnica de Sinaloa.. Toda mi vida he sido apasionado por los videojuegos, hasta el punto que empecé a crearlos yo mismo! Mi meta es poder crear experiencias que den un poquito de alegría al mundo!
             </p>
-            <h2>
+            <h2 id="tech_title">
                 Lenguajes y Herramientas
             </h2>
             <div class="bar_title"></div>
-            <p>
+            <div id="tech_desc">
                 <ul>
                     Lenguajes y Formatos
                     <ul>
-                        
                         <li>
                             GDScript
                         </li>
@@ -87,18 +92,18 @@
                         </li>
                     </ul>
                 </ul>
-            </p>
-            <h2>
+            </div>
+            <h2 id="cv_title">
                 Mi CV
             </h2>
             <div class="bar_title"></div>
-            <p id="cv">
+            <p id="cv_desc">
                 Si esta interesado, puede descargar una copia de mi CV!
             </p>
             <!--Boton de descarga-->
             <nav>
                 <ul>
-                    <a class="btn btn_xlarge short_delay" download href="./downloads/Carlos Meza.pdf">Descargar<span class="material-symbols-outlined">download</span></a>
+                    <a id="download_title" class="btn btn_xlarge short_delay" download href="./downloads/Carlos Meza.pdf">Descargar<span class="material-symbols-outlined">download</span></a>
                 </ul>
             </nav>
             

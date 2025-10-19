@@ -1,0 +1,35 @@
+{
+    "en":{
+        "main_desc": "'A star fell from the sky that day...' <br>With 7 complete zones, a time attack mode and an original soundtrack by Hollie Taylor. Sonic and The Fallen Star was the first completed videogame I ever developed. A fan project with the goal of learning the ropes of game development.",
+        "details_title" : "Details",
+        "details_desc" : "<li>Genre<ul><li>Platformer</li></ul></li><li>State<ul><li>Completed</li></ul></li><li>Tecnology / Languages<ul><li>Clickteam Fusion</li></ul></li><li>Launch<ul><li>2022</li></ul></li>",
+        "roles_title" : "My contributions",
+        "roles_desc" : "<li>Main developer</li><li>Programmer</li><li>Artist</li>",
+        "download_title" : "Downloads",
+        "download_button" : "Web Site<span class='material-symbols-outlined'>open_in_new</span>",
+        "screenshot_title" : "Screenshots",
+        "music_title" : "Music"
+    },
+    "es":{
+        "main_desc": "'Una estrella cayo del cielo ese dia...' <br>Con 7 zonas completas, modo contrareloj y un soundtrack original por Hollie Taylor. Sonic and The Fallen Star fue el primer videojuego completo desarrollado por mi. Un proyecto de afacionado con el fin de aprender las riendas de el desarrollo de videojuegos.",
+        "details_title" : "Detalles",
+        "details_desc" : "<li>Genero<ul><li>Plataforma</li></ul></li><li>Estado<ul><li>Completado</li></ul></li><li>Tecnologia / Lenguajes<ul><li>Clickteam Fusion</li></ul></li><li>Lanzamiento<ul><li>2022</li></ul></li>",
+        "roles_title" : "Mis contribuciones",
+        "roles_desc" : "<li>Desarollador principal</li><li>Programador</li><li>Artista</li>",
+        "download_title" : "Descargas",
+        "download_button" : "Sitio Web<span class='material-symbols-outlined'>open_in_new</span>",
+        "screenshot_title" : "Screenshots",
+        "music_title" : "Musica"
+    },
+    "fr":{
+        "main_desc": "Les portes du royaume des esprits sont ouvertes ! Une activité paranormale rôde dans l'ombre d'Orcana. Résolvez les mystères qui se cachent sous la lumière de la lune avant que le royaume des esprits ne dévore notre monde ! <br>C'est mon plus gros projet à ce jour. En développement actif, les graphismes, la musique et la programmation sont entièrement de mon fait.",
+        "details_title" : "Détails",
+        "details_desc" : "<li>Genre<ul><li>Plateforme</li></ul></li><li>l' état<ul><li>Complété</li></ul></li><li>Technologie/Langues<ul><li>Clickteam Fusion</li></ul></li><li>la parution<ul><li>2022</li></ul></li>",
+        "roles_title" : "Mes contributions",
+        "roles_desc" : "<li>Développeur principal</li><li>Programmeur</li><li>Artiste</li>",
+        "download_title" : "Téléchargements",
+        "download_button" : "Site web<span class='material-symbols-outlined'>open_in_new</span>",
+        "screenshot_title" : "Captures d'écran",
+        "music_title" : "Musique"
+    }
+}

@@ -11,7 +11,7 @@
 
     /*Paleta de colores*/
     --c1: #f7f7f7; --c2: #121ecb; --c3: #13133a; --c4: #0b0b0f; --c5: #212ddc; --c6: #23234a; --c7: #44446c;
-    --ct1: #f7f7f700;
+    --ct1: #f7f7f700; --ct3: #13133aaa;
 }
 /*ID de fondo*/
 #bg{
@@ -97,17 +97,18 @@
     padding: 0;
     display: inline;
     position: relative;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     flex: 1;
     margin: auto;
     
 }
 
+
+
+
 /*Iconos*/
-.material-symbols-outlined{
-    padding: 4px;
-}
+
 
 /*Tiempos de animacion*/
 .shorter_delay{

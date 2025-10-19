@@ -6,15 +6,11 @@
     position: fixed;
     top: -40%;
     right: -10%;
-
     opacity: 0.2;
-
     margin: 0;
     padding: 0;
-
     image-rendering: pixelated;
     object-fit:contain;
-
     /*Animacion*/
     animation-name: bg_charac_appear;
     animation-duration: 2.0s;
@@ -60,6 +56,17 @@
     height: 100%;
     font-size: 2rem;
 }
+@media screen and (max-width : 600px) {
+    .game_sect p{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (min-width : 600px) {
+    .game_sect p{
+        font-size: 2rem;
+    }
+}
+
 /*Detalles de juego*/
 .game_details{
     display: inline-block;

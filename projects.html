@@ -8,14 +8,16 @@
     <link rel="stylesheet" href="estilos/styles_sidebar_page.css">
     <link rel="stylesheet" href="estilos/styles_projects.css">
     <title>Carlos Meza | Proyectos </title>
+
+    <link id="lang_file" href="./languages/projects.json">
+    <script src="./script/nav_button.js"></script>
+    <script src="./script/lang_loader.js"></script>
     
+
+
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
-
-    <!--Lenguajes-->
-    <link id="lang_file" href="./languages/projects.json">
-    <script src="./script/lang_loader.js"></script>
 </head>
 <!--Fondo generico de cuadricula-->
 <div id="bg">
@@ -23,23 +25,24 @@
 </div>
 <body>
     <main>
-        <!--Menu de herramientas-->
-        <div id="lang_menu">
-            <button id="lang_button_en" class="btn lang_button longest_delay">EN</button>
-            <button id="lang_button_es" class="btn lang_button longest_delay">ES</button>
-            <button id="lang_button_fr" class="btn lang_button longest_delay">FR</button>
-        </div>
-        
-        <!--Menu de navegacion lateral-->
-        <aside>
+        <!--Menu de navegacion-->
+        <!--Menu de navegacion pequeño-->
+        <button id="nav_menu_button" class="btn nav_button"><span class="material-symbols-outlined">menu</span></button>
+        <!--Menu de navegacion grande/default-->
+        <aside id="sidebar" class="big_side_bar">
             <nav>
                 <ul>
-                    <a id="home" class="btn short_delay" href="index.html">Inicio</a>
-                    <a id="about" class="btn short_delay" href="about.html">Sobre mi</a>
-                    <a id="project" class="btn short_delay" href="projects.html">Mis proyectos</a>
+                    <a id="home" class="btn shorter_delay" href="index.html">Inicio</a>
+                    <a id="about" class="btn shorter_delay" href="about.html">Sobre mi</a>
+                    <a id="project" class="btn shorter_delay" href="projects.html">Mis proyectos</a>
                 </ul>
             </nav>
-        </aside>     
+            <div id="lang_menu">
+                <button id="lang_button_en" class="btn lang_button shorter_delay">EN</button>
+                <button id="lang_button_es" class="btn lang_button shorter_delay">ES</button>
+                <button id="lang_button_fr" class="btn lang_button shorter_delay">FR</button>
+            </div>
+        </aside>
         <section>
             <h1 id="title">
                 Proyectos
