@@ -10,8 +10,16 @@ function setup(){
     menu_button = document.getElementById("nav_menu_button");
     side_bar = document.getElementById("sidebar");
     if (menu_button){
-        menu_button.addEventListener("click",toggle_menu);
-        menu_button.addEventListener("touchend",toggle_menu);
+
+        /*Checar si esta en dispositivo movil*/
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+        /*Conectar la funcion de touchend solo si esta en dispositivo movil*/
+        if (isMobile){
+            menu_button.addEventListener("touchend",toggle_menu);
+        }else{
+            menu_button.addEventListener("click",toggle_menu);
+        }
     }
 }
 function toggle_menu(){

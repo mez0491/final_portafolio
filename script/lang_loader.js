@@ -64,6 +64,10 @@ async function find_elements_by_id(id_data){
 }
 /*Botones de lenguaje*/
 function assign_buttons(){
+
+    /*Checar si esta en dispositivo movil*/
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
     /*Boton ingles */
     const boton_en = document.getElementById("lang_button_en");
     if (boton_en){
@@ -75,8 +79,11 @@ function assign_buttons(){
         });
         /*Si existe un elemento de menu lateral, conectar el boton para cerrarlo al ser presionado*/
         if (side_bar){
-            boton_en.addEventListener("click",toggle_menu);
-            boton_en.addEventListener("touchend",toggle_menu);
+            if (isMobile){
+                boton_en.addEventListener("touchend",toggle_menu);
+            }else{
+                boton_en.addEventListener("click",toggle_menu);
+            }
         }
     }
 
@@ -91,8 +98,11 @@ function assign_buttons(){
         });
         /*Si existe un elemento de menu lateral, conectar el boton para cerrarlo al ser presionado*/
         if (side_bar){
-            boton_es.addEventListener("click",toggle_menu);
-            boton_es.addEventListener("touchend",toggle_menu);
+            if (isMobile){
+                boton_es.addEventListener("touchend",toggle_menu);
+            }else{
+                boton_es.addEventListener("click",toggle_menu);
+            }
         }
     }
 
@@ -107,8 +117,11 @@ function assign_buttons(){
         });
         /*Si existe un elemento de menu lateral, conectar el boton para cerrarlo al ser presionado*/
         if (side_bar){
-            boton_fr.addEventListener("click",toggle_menu);
-            boton_fr.addEventListener("touchend",toggle_menu);
+            if (isMobile){
+                boton_fr.addEventListener("touchend",toggle_menu);
+            }else{
+                boton_fr.addEventListener("click",toggle_menu);
+            }
         }
     }
 
