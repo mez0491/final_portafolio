@@ -7,9 +7,18 @@
     <link rel="stylesheet" href="estilos/styles_global.css">
     <link rel="stylesheet" href="estilos/styles_sidebar_page.css">
     <link rel="stylesheet" href="estilos/styles_about.css">
+        
+    <link id="lang_file" href="./languages/about.json">
+    <script src="./script/lang_loader.js"></script>
+
     <title>Carlos Meza | Sobre mi</title>
 </head>
+<!--Fondo generico de cuadricula-->
+<div id="bg">
+    <div id="bg_grad"></div>
+</div>
 <body>
+
     <main>
         <div id="lang_menu">
             <button id="lang_button_en" class="btn lang_button longest_delay">EN</button>
@@ -27,53 +36,71 @@
             </nav>
         </aside>
         <section>
-            <h1>
+            <h1 id="about_me">
                 Sobre mi
             </h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
+            <div class="bar_title"></div>
+            <p id="main" class="main_desc">
+                Soy un desarrollador de Mazatlán, Sinaloa estudiando en la Universidad Politecnica de Sinaloa. Toda mi vida he sido apasionado por los videojuegos, hasta el punto que empece a crearlos yo mismo!
             </p>
-
+            <h2>
+                Lenguajes y Herramientas
+            </h2>
+            <div class="bar_title"></div>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
+                <ul>
+                    Lenguajes y Formatos
+                    <ul>
+                        
+                        <li>
+                            GDScript
+                        </li>
+                        <li>
+                            JSON
+                        </li>
+                        <li>
+                            JavaScript
+                        </li>
+                        <li>
+                            C#
+                        </li>
+                        <li>
+                            C++
+                        </li>
+                    </ul>
+                </ul>
+                <ul>
+                    Herramientas y Software
+                    <ul>
+                        
+                        <li>
+                            Godot
+                        </li>
+                        <li>
+                            VSCode 
+                        </li>
+                        <li>
+                            Furnace Tracker
+                        </li>
+                    </ul>
+                </ul>
             </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
+            <h2>
+                Mi CV
+            </h2>
+            <div class="bar_title"></div>
+            <p id="cv">
+                Si esta interesado, puede descargar una copia de mi CV!
             </p>
+            <!--Boton de descarga-->
+            <nav>
+                <ul>
+                    <a class="btn btn_xlarge short_delay" download href="./downloads/Carlos Meza.pdf">Descargar</a>
+                </ul>
+            </nav>
+            
         </section>
     </main>
+
 </body>
 </html>

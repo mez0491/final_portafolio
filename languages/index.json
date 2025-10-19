@@ -1,19 +1,19 @@
 {
     "en":{
         "name": "Carlos Meza",
-        "desc" : "Creating stories from above the stars.",
+        "desc" : "Game dev portfolio",
         "about" : "About me",
         "project" : "My projects"
     },
     "es":{
         "name": "Carlos Meza",
-        "desc" : "Creando historias arriba de las estrellas.",
+        "desc" : "Portafolio de desarrollo de videojuegos",
         "about" : "Sobre mi",
         "project" : "Mis proyectos"
     },
     "fr":{
         "name": "Carlos Meza",
-        "desc" : "Créer des histoires au-dessus des étoiles.",
+        "desc" : "Portefeuille de développeurs de jeux",
         "about" : "sur moi",
         "project" : "mes projets"
     }

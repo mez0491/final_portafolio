@@ -82,8 +82,31 @@ p{
     animation-name: elem_startup;
     animation-duration: 0.5s;
     animation-fill-mode:backwards;
+    font-size: 2rem;
     
 }
+
+/*Informacion de address*/
+address{
+    color: var(--c7);
+    display: flex;
+    /*Animacion para startup*/
+    animation-name: elem_startup;
+    animation-duration: 0.5s;
+    animation-fill-mode:backwards;
+}
+
+address span{
+    padding: 10px;
+    margin: auto;
+}
+
+address p{
+    padding: 10px;
+    margin: auto;
+    font-size: 1rem;
+}
+
 
 /*Menu de navegacion inferior*/
 nav{

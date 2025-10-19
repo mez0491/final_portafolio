@@ -7,18 +7,13 @@ html,body,main{
     overflow: auto;
 }
 body{
-    
     color: var(--c1);
     font-family: "DM Sans", sans-serif;
-    background-color: var(--c1);
-    
     /*Tamaños de pagina*/
-    
 }
 
 /*Contenido principal*/
 main{
-    
     /*Centrar contenido*/
     display: flex;
     gap: 25px;
@@ -36,6 +31,8 @@ aside{
     width: 20%;
     height: 100%;
     top:0;
+    padding: 1%;
+    box-sizing: border-box;
 }
 
 /*Media querys para tamaño horizontal*/
@@ -57,13 +54,12 @@ aside{
 
 section{
     margin: auto;
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 5%;
     color: var(--c4);
-
     flex: 5;
     padding: 0;
-    margin-left: 5%;
-    margin-right: 5%;
-
     text-align: left;
     position: relative;
     top: 0%;
@@ -77,7 +73,6 @@ p{
     text-align: justify;
     font-size: 1rem;
 }
-
 /*Menu de navegacion aside*/
 nav{
     width: 100%;
@@ -104,3 +99,23 @@ nav ul {
 }
 
 
+/*Informacion de address*/
+address{
+    color: var(--c7);
+    display: flex;
+    /*Animacion para startup*/
+    animation-name: elem_startup;
+    animation-duration: 0.5s;
+    animation-fill-mode:backwards;
+}
+
+address span{
+    padding: 10px;
+    margin: auto;
+}
+
+address p{
+    padding: 10px;
+    margin: auto;
+    font-size: 1rem;
+}

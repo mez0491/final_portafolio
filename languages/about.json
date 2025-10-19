@@ -3,17 +3,21 @@
         "home" : "Home",
         "about" : "About me",
         "project" : "My projects",
-        "main" : ""
+        "about_me" : "About me",
+        "main" : "I'm a game developer from Mazatlán, Sinaloa studying at Universidad Politecnica de Sinaloa. I've loved videogames all my life, to the point I started making them myself!"
     },
     "es":{
         "home" : "Inicio",
         "about" : "Sobre mi",
         "project" : "Mis proyectos",
-        "main" : "Soy un desarrollador de Mazatlán, Sinaloa. Toda mi vida he sido apasionado por los videojuegos, hasta el punto que empece a crearlos yo mismo!"
+        "about_me" : "Sobre mi",
+        "main" : "Soy un desarrollador de Mazatlán, Sinaloa estudiando en la Universidad Politecnica de Sinaloa.. Toda mi vida he sido apasionado por los videojuegos, hasta el punto que empece a crearlos yo mismo! Mi meta es poder crear proyectos que den un poquito de alegria al mundo!"
     },
     "fr":{
         "home" : "Commencer",
         "about" : "sur moi",
-        "project" : "mes projets"
+        "project" : "mes projets",
+        "about_me" : "sur moi",
+        "main":"Je suis développeur de jeux vidéo originaire de Mazatlán, dans l'État de Sinaloa, et j'étudie à l'Université polytechnique de Sinaloa. J'ai toujours aimé les jeux vidéo, au point de commencer à en créer moi-même!"
     }
 }

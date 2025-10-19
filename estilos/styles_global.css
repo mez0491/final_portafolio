@@ -10,21 +10,35 @@
 :root{
 
     /*Paleta de colores*/
-    --c1: #f7f7f7; --c2: #121ecb; --c3: #13133a; --c4: #0b0b0f; --c5: #212ddc; --c6: #23234a;
+    --c1: #f7f7f7; --c2: #121ecb; --c3: #13133a; --c4: #0b0b0f; --c5: #212ddc; --c6: #23234a; --c7: #44446c;
+    --ct1: #f7f7f700;
 }
 /*ID de fondo*/
 #bg{
-    background-color: #ffffff;
+    background-color: var(--c1);
     position: fixed;
     top: 0px;
     left: 0px;
     width: 100%;
     height: 100%;
     z-index: -100;
+    overflow: auto;
 }
+#bg_grad{
+    background-image: linear-gradient(to bottom, var(--ct1),var(--c1)) ,  url("../imagenes/bg_squares.png") ;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    background-repeat: no-repeat, repeat;
+    opacity: 0.05;
+    z-index:1;
+}
+
 /*Clases*/
 /*Botones*/
 .btn{
+    position: relative;
+
     color: var(--c1);
     text-decoration: none;
     text-align: center;
@@ -44,6 +58,7 @@
     border-style: solid;
     border-top-left-radius: 25%;
     border-bottom-right-radius: 25%;
+    transform: translate(0px,0px);
     transition: 0.2s;
 }
 
@@ -66,6 +81,7 @@
     border-color: var(--c1);
     border-width: 5px;
 }
+
 
 /*Botones de lenguaje*/
 #lang_menu{

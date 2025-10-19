@@ -134,16 +134,7 @@
         font-size: 1rem;
     }
 }
-@media screen and (min-width : 800px) {
-    .prj_xlarge,.prj_small{
-        width: 300px;
-        height: 150px;
-    }
-    .prj h2{
-        font-size: 1rem;
-    }
-}
-@media screen and (min-width : 1200px) {
+@media screen and (min-width : 800) {
     .prj_xlarge{
         width: 500px;
         height: 250px;

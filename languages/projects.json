@@ -1,0 +1,50 @@
+{
+    "en":{
+        "home" : "Home",
+        "about" : "About me",
+        "project" : "My projects",
+        "title" : "Projects",
+        "indev_title" : "In development",
+        "indev_desc" : "Projects that are currently in development.",
+        "fan_title" : "Fan projects",
+        "fan_desc" : "Projects created to learn or have fun.",
+        "soul_desc" : "The gates to the spirit realm are open...",
+        "star_desc" : "A star fell from the sky that day...",
+        "moon_desc" : "Now with waterbikes!",
+        "other_title" : "Other works",
+        "other_desc" : "Projects in which I've contributed in a minor role.",
+        "edm_desc" : "Artist and character designer."
+    },
+    "es":{
+        "home" : "Inicio",
+        "about" : "Sobre mi",
+        "project" : "Mis proyectos",
+        "title" : "Proyectos",
+        "indev_title" : "En desarrollo",
+        "indev_desc" : "Proyectos que se encuentran en desarrollo.",
+        "fan_title" : "Proyectos de apasionado",
+        "fan_desc" : "Proyectos creados por diversion o aprendizaje.",
+        "soul_desc" : "Las puertas al mundo de los espiritus han sido abiertas...",
+        "star_desc" : "Una estrella cayo del cielo ese día...",
+        "moon_desc" : "Ahora con motos acuaticas!",
+        "other_title" : "Otras contribuciones",
+        "other_desc" : "Proyectos en los que he contribuido de una u otra manera en roles menores.",
+        "edm_desc" : "Artista y diseñador de personajes."
+    },
+    "fr":{
+        "home" : "Commencer",
+        "about" : "sur moi",
+        "project" : "mes projets",
+        "title" : "Projets",
+        "indev_title" : "En développement",
+        "indev_desc" : "Projets actuellement en développement.",
+        "fan_title" : "Projets de fans",
+        "fan_desc" : "Projets créés pour apprendre ou s'amuser.",
+        "soul_desc" : "Les portes du royaume des esprits sont ouvertes...",
+        "star_desc" : "Une étoile est tombée du ciel ce jour-là...",
+        "moon_desc" : "Maintenant avec des vélos nautiques !",
+        "other_title" : "Autres travaux",
+        "other_desc" : "Projets dans lesquels j'ai contribué dans un rôle mineur.",
+        "edm_desc" : "Artiste et créateur de personnages."
+    }
+}

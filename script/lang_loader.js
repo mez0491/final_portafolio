@@ -1,7 +1,18 @@
-
+document.addEventListener("DOMContentLoaded",setup); 
 document.addEventListener("DOMContentLoaded",assign_buttons); 
 
-main("languages/index.json","en");
+var target_path;
+
+function setup(){
+    /*Encontrar el camino hacia el archivo de lenguajes*/
+    const element = document.getElementById("lang_file");
+    target_path = element.href;
+    
+    /*Obtener el lenguaje preferido del usuario dentro del buscador */
+    const prefered_language = "es";
+
+    main(target_path,prefered_language);
+}
 
 async function main(file_path,lang){
     await get_json(file_path,lang);
@@ -20,7 +31,7 @@ async function fetch_json(target_string,target_lang){
         
         return json[target_lang];
     } catch (error) {
-        console.log(error);
+
     }
 }
 
@@ -28,14 +39,13 @@ async function find_elements_by_id(id_data){
     //Obtener los nombres de las llaves
     
     const key_names = Object.keys(id_data);
-    console.log(key_names);
     
     /*Buscar dentro de todas las llaves del arreglo */
     for (index = 0; index < key_names.length; index++) {
         
         /*Encontrar el elemento usando ids */
         const found_item = document.getElementById(key_names[index]);
-        console.log(found_item);
+
         /*Cambiar texto dentro de los elementos*/
         found_item.textContent = id_data[key_names[index]];
         
@@ -47,28 +57,28 @@ function assign_buttons(){
     /*Boton ingles */
     const boton_en = document.getElementById("lang_button_en");
     boton_en.addEventListener('click', function(event) {
-        main('languages/index.json', 'en');
+        main(target_path, 'en');
     });
     boton_en.addEventListener('touchend', function(event) {
-        main('languages/index.json', 'en');
+        main(target_path, 'en');
     });
 
     /*Boton español */
     const boton_es = document.getElementById("lang_button_es");
     boton_es.addEventListener('click', function(event) {
-        main('languages/index.json', 'es');
+        main(target_path, 'es');
     });
 
     boton_es.addEventListener('touchend', function(event) {
-        main('languages/index.json', 'es');
+        main(target_path, 'es');
     });
     /*Boton frances */
     const boton_fr = document.getElementById("lang_button_fr");
     boton_fr.addEventListener('click', function(event) {
-        main('languages/index.json', 'fr');
+        main(target_path, 'fr');
     });
     boton_fr.addEventListener('touchend', function(event) {
-        main('languages/index.json', 'fr');
+        main(target_path, 'fr');
     });
 }
 

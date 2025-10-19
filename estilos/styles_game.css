@@ -1,3 +1,27 @@
+@keyframes bg_charac_appear {
+    from {opacity: 0;}
+    to {opacity: 0.2;}
+}
+#bg_charac{
+    position: fixed;
+    top: -40%;
+    right: -10%;
+
+    opacity: 0.2;
+
+    margin: 0;
+    padding: 0;
+
+    image-rendering: pixelated;
+    object-fit:contain;
+
+    /*Animacion*/
+    animation-name: bg_charac_appear;
+    animation-duration: 2.0s;
+    animation-delay: 0.4s;
+    animation-fill-mode: backwards;
+}
+
 .game_logo{
     width: 50%;
     height: 50%;
@@ -38,29 +62,37 @@
 }
 /*Detalles de juego*/
 .game_details{
+    display: inline-block;
+    width: 100%;
+    height: fit-content;
     flex:1;
-    
     padding: 10px;
-}
 
+    box-sizing: border-box;
+    
+}
 .game_details h2{
-    background-color: var(--c2);
+    background-color: var(--c3);
     color: var(--c1);
     padding: 10px;
+    margin: auto;
+
 }
 .game_details ul{
     list-style: none;
+    margin: auto;
+    padding: 10px;
 }
 
 
 /*Contenedor de capturas*/
 .container_scs{
-    width: 100%;
+    max-width: 10%;
     height: fit-content;
     display: flex;
     padding: 0;
     margin-top: 25px;
-    margin-right: auto;
+    margin-right: 20%;
     gap: 5px;
 }
 .container_scs_small{
@@ -153,6 +185,10 @@
     width: 640px;
     height: 480px;
 }
+.scs_main_wide{
+    width: 848px;
+    height: 480px;
+}
 .scs_small{
     width: 160px;
     height: 120px;
@@ -173,18 +209,32 @@
         height: 240px;
         display: block;
     }
+    .scs_main_wide{
+        width: 320px;
+        height: 240px;
+        display: block;
+    }
 }
 @media screen and (min-width : 400px) {
     .scs_main{
         width: 320px;
         height: 240px;
         display: block;
-
+    }
+    .scs_main_wide{
+        width: 424px;
+        height: 240px;
+        display: block;
     }
 }
 @media screen and (min-width : 1000px ){
     .scs_main{
         width: 640px;
+        height: 480px;
+        display: block;
+    }
+    .scs_main_wide{
+        width: 848px;
         height: 480px;
         display: block;
     }

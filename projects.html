@@ -7,73 +7,90 @@
     <link rel="stylesheet" href="estilos/styles_global.css">
     <link rel="stylesheet" href="estilos/styles_sidebar_page.css">
     <link rel="stylesheet" href="estilos/styles_projects.css">
-
     <title>Carlos Meza | Proyectos </title>
+
+    <!--Lenguajes-->
+    <link id="lang_file" href="./languages/projects.json">
+    <script src="./script/lang_loader.js"></script>
 </head>
+<!--Fondo generico de cuadricula-->
+<div id="bg">
+    <div id="bg_grad"></div>
+</div>
 <body>
     <main>
+        <!--Menu de herramientas-->
+        <div id="lang_menu">
+            <button id="lang_button_en" class="btn lang_button longest_delay">EN</button>
+            <button id="lang_button_es" class="btn lang_button longest_delay">ES</button>
+            <button id="lang_button_fr" class="btn lang_button longest_delay">FR</button>
+        </div>
+        
         <!--Menu de navegacion lateral-->
         <aside>
             <nav>
                 <ul>
-                    <a class="btn short_delay" href="index.html">Inicio</a>
-                    <a class="btn short_delay" href="about.html">Sobre mi</a>
-                    <a class="btn short_delay" href="projects.html">Mis proyectos</a>
+                    <a id="home" class="btn short_delay" href="index.html">Inicio</a>
+                    <a id="about" class="btn short_delay" href="about.html">Sobre mi</a>
+                    <a id="project" class="btn short_delay" href="projects.html">Mis proyectos</a>
                 </ul>
             </nav>
         </aside>     
         <section>
-            <h1>
+            <h1 id="title">
                 Proyectos
             </h1>
             <div class="bar_title"></div>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora adipisci, perspiciatis fuga, et error, suscipit dolore quaerat architecto iusto vero itaque sequi eligendi blanditiis nam sit libero quia explicabo.
-            </p>
-            <h2>
+            <h2 id="indev_title">
                 En desarrollo
             </h2>
+            <p id="indev_desc">
+                Proyectos que se encuentran en desarollo
+            </p>
             <div class="bar_title"></div>
             <nav>
                 <ul class="container_prj">
                     <a class="prj prj_xlarge shorter_delay" href="proyectos/soul_millennia.html">
                         <h2>SOUL MILLENNIA</h2>
-                        <p>Las puertas al mundo de los espiritus han sido abiertas...</p>
+                        <p id="soul_desc">Las puertas al mundo de los espiritus han sido abiertas...</p>
                         <img src="imagenes/proyecto/soul_millennia.png" alt="Soul Millennia">
                     </a>
                 </ul>
             </nav>
-            <h2>
+            <h2 id="fan_title">
                 Proyectos de aficionado
             </h2>
+            <p id="fan_desc">
+                Proyectos de aficionado hechos por diversion o aprendizaje.
+            </p>
             <div class="bar_title"></div>
             <nav>
                 <ul class="container_prj">
-                    <a class="prj prj_xlarge shorter_delay" href="proyectos/soul_millennia.html">
+                    <a class="prj prj_xlarge shorter_delay" href="proyectos/fallen_star.html">
                         <h2>Sonic and The Fallen Star</h2>
-                        <p>Explora 7 zonas dentro de las Starfall Isles, el lugar de la caida de la Mystic Star.</p>
+                        <p id="star_desc">"Una estrella cayo del cielo ese día..."</p>
                         <img src="imagenes/proyecto/fallen_star.png" alt="Soul Millennia">
                     </a>
-                    <a class="prj prj_xlarge shorter_delay" href="proyectos/soul_millennia.html">
+                    <a class="prj prj_xlarge shorter_delay" href="proyectos/moon_facility.html">
                         <h2>Sonic and The Moon Facility</h2>
-                        <p>Las puertas al mundo de los espiritus han sido abiertas...</p>
+                        <p id="moon_desc">Ahora con motos acuaticas!</p>
                         <img src="imagenes/proyecto/moon_facility.png" alt="Soul Millennia">
                     </a>
                 </ul>
             </nav>
-            <h2>
-                Otras aportaciones
+            <h2 id="other_title">
+                Otras contribuciones
             </h2>
+            <p id="other_desc">
+                Proyectos en los que he contribuido de una u otra manera en roles menores.
+            </p>
             <div class="bar_title"></div>
             <nav>
                 <ul class="container_prj">
-                    <a class="prj prj_small shorter_delay" href="proyectos/soul_millennia.html">
-                        <h2>Midi and Melody</h2>
-                        <img src="imagenes/proyecto/soul_millennia.png" alt="Soul Millennia">
-                    </a>
-                    <a class="prj prj_small shorter_delay" href="proyectos/soul_millennia.html">
-                        <h2>Sonic and The Moon Facility</h2>
-                        <img src="imagenes/proyecto/soul_millennia.png" alt="Soul Millennia">
+                    <a class="prj prj_small shorter_delay" target="_blank" href="https://www.hedgehogtechnicalinstitute.com/forum/viewtopic.php?t=139">
+                        <h2>Electro-Dynamic Mayhem</h2>
+                        <p id="edm_desc">Artista y diseñador de personajes.</p>
+                        <img src="imagenes/proyecto/EDM.png" alt="Soul Millennia">
                     </a>
                 </ul>
             </nav>
