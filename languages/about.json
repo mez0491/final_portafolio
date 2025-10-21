@@ -16,7 +16,7 @@
         "about" : "Sobre mi",
         "project" : "Mis proyectos",
         "about_me" : "Sobre mi",
-        "main" : "Soy un desarrollador de Mazatlán, Sinaloa estudiando en la Universidad Politécnica de Sinaloa.. Toda mi vida he sido apasionado por los videojuegos, hasta el punto que empecé a crearlos yo mismo! Mi meta es poder crear experiencias que den un poquito de alegría al mundo!",
+        "main" : "Soy un desarrollador de Mazatlán, Sinaloa estudiando en la Universidad Politécnica de Sinaloa. Toda mi vida he sido apasionado por los videojuegos, hasta el punto que empecé a crearlos yo mismo! Mi meta es poder crear experiencias que den un poquito de alegría al mundo!",
         "tech_title" : "Lenguajes y Herramientas",
         "tech_desc" : "<ul>Lenguajes y Formatos<ul><li>GDScript</li><li>JSON</li><li>JavaScript</li><li>C#</li><li>C++</li></ul></ul><ul>Herramientas y Software<ul><li>Godot</li><li>VSCode </li><li>Furnace Tracker</li></ul></ul>",
         "cv_title" : "Mi CV",
